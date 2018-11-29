@@ -38,8 +38,8 @@ double coord_2d_dist(const coord_2d_t* a, const coord_2d_t* b){
 
 double coord_2d_area_triangle(const coord_2d_t* a, const coord_2d_t* b, const coord_2d_t* c)
 {
-	z = fabs((a->x * (b->y - c->y) + b->x * (c->y - a->y) + c->x * (a->y - b->y))/2)
-	return z
+	float z = fabs((a->x * (b->y - c->y) + b->x * (c->y - a->y) + c->x * (a->y - b->y))/2);
+	return z;
 }
 
 bool coord_2d_eq(const coord_2d_t* a, const coord_2d_t* b){
